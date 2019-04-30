@@ -12,4 +12,4 @@ mongoose.connect('mongodb+srv://sergiojr:sergiojr@cluster0-37i7u.mongodb.net/cat
 app.use(express.json());
 app.use(require('./routes'));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
